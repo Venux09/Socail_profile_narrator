@@ -1,0 +1,27 @@
+#----------------------------mechanism---------------------------------------------------------#
+path:----user will put the input of his or her profile
+# user will got the option to put profiles .
+#options will be like:-- linkedin,insta,github that's all 
+#then user can choose something like he want to search something on that platform,have 
+continue-- have to reviw his profile and  may be checking user stats(difficult but not impossible)
+#can also add voice over someting like if user want it in someone"s voice their review ,
+# so they can get it or want in text . they can get in too
+#-------------------for now idea--------------------------------------------------------------------#
+
+
+
+# folder structure for now : - 
+## 📁 Project Structure
+```
+social-profile-narrator/
+├── main.py              # entry point of the program
+├── narrator.py          # converts text to speech using gTTS
+├── requirements.txt     # all libraries needed to run this project
+├── README.md            # project documentation
+└── platforms/
+    ├── __init__.py      # marks platforms as a python package
+    ├── github.py        # fetches GitHub profile data
+    |
+    ├── instagram.py     # fetches Instagram profile data
+    └── linkedin.py      # fetches LinkedIn profile data
+```
