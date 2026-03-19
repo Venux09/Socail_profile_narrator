@@ -1,4 +1,4 @@
-
+from PLATFORMS.github import fetch_github_profile #importing function from github.py
 
 
 
@@ -21,6 +21,7 @@ else:
 # calling the  function
 if user_input == "1":
     user_username = input("Enter git hub user name here [correct!!] : ")
+    profile = fetch_github_profile(user_username)
     #we will fetch data from git hub
 elif user_input== "2":
     user_username = input("Enter instagram profile name here : ")
@@ -29,8 +30,10 @@ elif user_input== "2":
         print("skip")
     else:
         print("Nice bio lets review it ")
-    # have to add jpg file [profile photo]to get reviewed but this much for now ,or tips to upgrade
-    u
+  
+    # TODO: open instagram profile in browser for user convenience
+    # user can copy bio from there and paste it here
+    
 elif user_input == "3":
     user_username = input("Enter linkedin username here : ")
     user_bio = input("Enter your linkedin bio here [press q for quit] :")
@@ -38,7 +41,8 @@ elif user_input == "3":
         print("skip")
     else:
         print("Nice bio let's review it ")
-    # have to add something like about bio or education details or tips to upgrade
+     # TODO: open linkedin profile in browser for user convenience
+    # user can copy bio from there and paste it here
 
 
     
