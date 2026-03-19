@@ -25,3 +25,7 @@ social-profile-narrator/
     ├── instagram.py     # fetches Instagram profile data
     └── linkedin.py      # fetches LinkedIn profile data
 ```
+libraries requiered :-
+1.requests
+2.google-generativai
+3.gtts 
