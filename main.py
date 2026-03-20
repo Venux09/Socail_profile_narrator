@@ -1,6 +1,7 @@
 from PLATFORMS.github import fetch_github_profile #importing function from github.py
-
-
+from narrator import generate_summary,generate_audio
+from PLATFORMS.instagram import fetch_instagram_profile 
+from PLATFORMS.linkedin import fetch_linkedin_profile
 
 print("-"*45)
 print("Social media profile narrator / reviewer 😊")#welcome
@@ -23,6 +24,9 @@ if user_input == "1":
     user_username = input("Enter git hub user name here [correct!!] : ")
     profile = fetch_github_profile(user_username)
     #we will fetch data from git hub
+    summary = generate_summary(profile)
+    generate_audio(summary)
+
 elif user_input== "2":
     user_username = input("Enter instagram profile name here : ")
     user_bio= input("Write your instagram bio for getting reviewed if not press [q]")
@@ -30,9 +34,11 @@ elif user_input== "2":
         print("skip")
     else:
         print("Nice bio lets review it ")
-  
-    # TODO: open instagram profile in browser for user convenience
-    # user can copy bio from there and paste it here
+
+    profile = fetch_instagram_profile(user_username,user_bio)
+    summary = generate_summary(profile)
+    generate_audio(summary)
+
     
 elif user_input == "3":
     user_username = input("Enter linkedin username here : ")
@@ -41,8 +47,12 @@ elif user_input == "3":
         print("skip")
     else:
         print("Nice bio let's review it ")
-     # TODO: open linkedin profile in browser for user convenience
-    # user can copy bio from there and paste it here
+        user_aim = input("What is the aim of your linkedin profile ? [e.g. looking for job, looking for connections, sharing knowledge etc.]  ")
+    profile = fetch_linkedin_profile(user_username,user_bio,user_aim)
+
+    summary = generate_summary(profile)
+    generate_audio(summary)
+
 
 
     
