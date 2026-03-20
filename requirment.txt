@@ -27,5 +27,6 @@ social-profile-narrator/
 ```
 libraries requiered :-
 1.requests
-2.google-generativai
+2.groq
 3.gtts 
+4.python dotenv
