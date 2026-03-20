@@ -12,7 +12,7 @@ print("Select the platform You want to continue with")
 for choice in choices:
     print(choice)
 
-user_input = input("Enter the platform you  want to continue with [1-3]")#user"s choice to continue
+user_input = input("Enter the platform you  want to continue with [1-3] : ")#user"s choice to continue
 if user_input not in ["1","2","3"]:
     print("You have filled wrong information")
 else:
