@@ -21,7 +21,7 @@ def generate_summary(profile):
         model='llama-3.3-70b-versatile',
         messages = [
             {"role":"system","content":"You are a social media profile reviewr"
-            "give a short and engaging review of profile and also tell .user what they can improve" },
+            "give a short and engaging review of profile and also tell .user what they can improve.[atleast of 100 words]" },
             {"role":"user","content":f"review this profile:{profile}"}
 
 
