@@ -1,2 +1,4 @@
 .env
 
+__pycache__
+PLATFORMS/__pycache__
